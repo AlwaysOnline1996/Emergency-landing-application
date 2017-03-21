@@ -44,7 +44,7 @@ int main(int argc, char **argv)
   // load facilities data
   // Insert your code here
 
-    ifstream file("/home/zengtong/Downloads/hw4.1/Facilities.txt");
+    ifstream file("./Facilities.txt");
     string line;
     assert(file.is_open()); // check if file is open
     while(getline(file,line)){
@@ -58,7 +58,7 @@ int main(int argc, char **argv)
   vector<Runway*> runways;
   // load runways data
   // Insert your code here
-  ifstream fileR("/home/zengtong/Downloads/hw4.1/Runways.txt");
+  ifstream fileR("./Runways.txt");
   string line_Runway;
   assert(fileR.is_open());
   while(getline(fileR,line_Runway)){
